@@ -2,17 +2,16 @@ import React, { useState } from 'react';
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 import { Avatar, Card, Skeleton, Switch } from 'antd';
 const { Meta } = Card;
-const CardEnsheaab = () => {
-  const [loading, setLoading] = useState(true);
+const CardEnsheaab = ({checkeds}) => {
+  const [loading, setLoading] = useState(checkeds);
   const onChange = (checked) => {
     setLoading(!checked);
   };
   return (
     <>
-      <Switch checked={!loading} onChange={onChange} />
+      {/* <Switch checked={!loading} onChange={onChange} /> */}
       <Card
         style={{
-          width: 300,
           marginTop: 16,
         }}
         loading={loading}
@@ -25,7 +24,6 @@ const CardEnsheaab = () => {
       </Card>
       <Card
         style={{
-          width: 300,
           marginTop: 16,
         }}
         actions={[
