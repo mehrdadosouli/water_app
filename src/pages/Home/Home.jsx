@@ -1,8 +1,9 @@
+import CarouselEnsheaab from "../../components/carousel/CarouselEnsheaab"
 
 function Home() {
   return (
     <div>
-        home page
+       <CarouselEnsheaab /> 
     </div>
   )
 }
