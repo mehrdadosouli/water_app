@@ -9,12 +9,12 @@ html {
   background-color: #fbfbfb;
   box-sizing: border-box;
   font-size: 62.5%;
+    direction: rtl;
 }
 
 body {
   font-size: 1.6rem;
   line-height: 1.6;
-  direction: rtl;
 
 }
 .container{
