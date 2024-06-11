@@ -4,28 +4,37 @@ import CardEnsheaab from '../card/CardEnsheaab';
 
 var settings = {
   // infinite: true,
-  speed: 500,
+  speed: 2000,
+  autoplaySpeed: 2000,
   slidesToShow: 4,
   slidesToScroll: 1,
+  slidesToShow: 4,
+  swipeToSlide: true,
   // autoplay: true,
+  cssEase: "linear",
   rtl:true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1330,
       settings: {
         slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
       }
     },
     {
-      breakpoint: 800,
+      breakpoint: 1010,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 677,
       settings: {
         slidesToShow: 1,
+        slidesToScroll: 1
       }
     }
   ]

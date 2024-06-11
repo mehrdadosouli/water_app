@@ -1,9 +1,9 @@
 import ContentLoader from "react-content-loader"
 
-function Skelety({checkeds}) {
+function Skelety({width,height,checkeds}) {
     return (
-            <ContentLoader  speed={2} width={400} height={160} viewBox="0 0 400 160" backgroundColor="#f3f3f3" foregroundColor="#ecebeb" style={{display:`${checkeds ? "hiiden" : "flex"}`}} >
-                <rect x="48" y="8" rx="3" ry="3" width="88" height="22" />
+            <ContentLoader  speed={2} viewBox="0 0 400 160" backgroundColor="#f3f3f3" foregroundColor="#ecebeb" style={{display:`${checkeds ? "hidden" : "flex"}`}} >
+                <rect x="48" y="8" rx="0" ry="0" width={width} height={height} />
             </ContentLoader>
     )
 }
